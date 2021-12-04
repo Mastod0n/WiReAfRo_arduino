@@ -67,7 +67,6 @@ void loop() {
 
   if(client.connected()) {                            // [WifiServer]
     String data = client.readStringUntil('\n');       // [WifiServer]
-    //client.stop();                                    // [WifiServer]
 
     pwmL = atoi(strtok(&data[0u],"."));
     pwmR = atoi(strtok(NULL,"."));
